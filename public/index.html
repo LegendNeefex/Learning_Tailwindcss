@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/output.css">
+    <title>Learning Tailwind</title>
+</head>
+<body class="font-default sm:font-default">
+    <div class="bg-gradient-to-l from-amber-600 to-amber-700">
+        <div class="flex flex-col sm:flex-row md:flex-col lg:flex-row justify-between items-center m-auto w-[90%] py-5">
+            <!-- Heading -->
+            <h2 class="text-black text-4 sm:text-4 font-bold cursor-pointer hover:text-white transition-colors duration-300 mb-4 sm:mb-0">
+                Tailwindcss.
+            </h2>
+            
+            <!-- Navigation Menu -->
+            <ul class="flex flex-col text-center sm:flex-row gap-4 sm:gap-9">
+                <li class="font-bold cursor-pointer hover:bg-white rounded-full hover:text-amber-600 p-3 sm:p-4 transition-colors duration-300 hover:text-center sm:text-black">
+                    Home
+                </li>
+                <li class="font-bold cursor-pointer hover:bg-white rounded-full hover:text-amber-600 p-3 sm:p-4 transition-colors duration-300 hover:text-center sm:text-black">
+                    About
+                </li>
+                <li class="font-bold cursor-pointer hover:bg-white rounded-full hover:text-amber-600 p-3 sm:p-4 transition-colors duration-300 hover:text-center sm:text-black">
+                    Services
+                </li>
+                <li class="font-bold cursor-pointer hover:bg-white rounded-full hover:text-amber-600 p-3 sm:p-4 transition-colors duration-300 hover:text-center sm:text-black">
+                    Contact
+                </li>
+                <li class="font-bold cursor-pointer hover:bg-white rounded-full hover:text-amber-600 hover:text-center p-3 sm:p-4 transition-colors duration-300 sm:text-black">
+                    FAQ
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="bg-gradient-to-r from-amber-600 to-amber-700 py-7">
+        <h1 class="text-4 font-bold text-center pb-4">Cards</h1>
+        <div class="flex m-auto w-[90%] gap-6 flex-col sm:flex-row md:flex-col lg:flex-row">
+            <!-- building custom card -->
+            <div class="bg-white w-88 sm:w-96 md:w-[700px] md:m-auto lg:w-96 p-7 rounded-md drop-shadow-md">
+                <h3 class="text-gray-700 font-bold text-4 text-center ">Header</h3>
+                <p class="text-center text-3 font-medium pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ad et at facere tempora, assumenda error, eos blanditiis quisquam voluptatibus repellat, quos nulla. Tempora quae dolor culpa nesciunt quisquam laborum.</p>
+                <div class="text-center pt-5 flex flex-row justify-center gap-3">
+                    <button class="bg-amber-600 p-4 text-black font-semibold w-24 rounded-xl hover:bg-amber-700 hover:text-white text-3 hover:scale-105 transition-transform duration-300">Yes</button>
+                    <button class="bg-black p-4 text-white font-semibold w-24 rounded-xl hover:bg-transparent hover:text-black border-2 border-black text-3 hover:scale-105 transition-transform duration-300">No</button>
+                    
+                </div>
+            </div>
+            <div class="bg-white w-88 sm:w-96 md:w-[700px] md:m-auto lg:w-96 p-7 rounded-md shadow-md">
+                <h3 class="text-gray-700 font-bold text-4 text-center ">Header</h3>
+                <p class="text-center text-3 font-medium pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ad et at facere tempora, assumenda error, eos blanditiis quisquam voluptatibus repellat, quos nulla. Tempora quae dolor culpa nesciunt quisquam laborum.</p>
+                <div class="text-center pt-5 flex flex-row justify-center gap-3">
+                    <button class="bg-amber-600 p-4 text-black font-semibold w-24 rounded-xl hover:bg-amber-700 hover:text-white text-3 hover:scale-105 transition-transform duration-300">Yes</button>
+                    <button class="bg-black p-4 text-white font-semibold w-24 rounded-xl hover:bg-transparent hover:text-black border-2 border-black text-3 hover:scale-105 transition-transform duration-300">No</button>
+                    
+                </div>
+            </div>
+            <div class="bg-white w-88 sm:w-96 md:w-[700px] md:m-auto lg:w-96 p-7 rounded-md shadow-md">
+                <h3 class="text-gray-700 font-bold text-4 text-center ">Header</h3>
+                <p class="text-center text-3 font-medium pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ad et at facere tempora, assumenda error, eos blanditiis quisquam voluptatibus repellat, quos nulla. Tempora quae dolor culpa nesciunt quisquam laborum.</p>
+                <div class="text-center pt-5 flex flex-row justify-center gap-3">
+                    <button class="bg-amber-600 p-4 text-black font-semibold w-24 rounded-xl hover:bg-amber-700 hover:text-white text-3 hover:scale-105 transition-transform duration-300">Yes</button>
+                    <button class="bg-black p-4 text-white font-semibold w-24 rounded-xl hover:bg-transparent hover:text-black border-2 border-black text-3 hover:scale-105 transition-transform duration-300">No</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-neutral-200 py-7">
+        <h2 class="text-4 font-bold text-center pb-4">Forms</h2>
+        <div class=" flex m-auto w-[90%] gap-6 flex-col sm:flex-row md:flex-col lg:flex-row">
+            <!-- building a custom form -->
+            <div class="bg-white w-88 sm:w-96 md:w-[700px] md:m-auto lg:w-96 rounded-md p-6 shadow-md ">
+                <h2 class="text-4 font-bold text-center text-black">Student login</h2>
+                <p class="text-center text-3 text-gray-600 ">welcome back neefex, kindly login below</p>
+                <div class="pt-5 flex flex-col gap-5">
+                    <input type="email" autocomplete="off" placeholder="Email" class="p-3 bg-none outline-none border-gray-600 border-2 rounded-md">
+                    <input type="password" autocomplete="off" placeholder="password" class="p-3 bg-none outline-none border-gray-600 border-2 rounded-md">
+                </div>
+                <button class="bg-amber-600 p-4 mt-6 text-black font-semibold w-24 rounded-xl hover:bg-amber-700 text-3 hover:scale-105 hover:text-white transition-transform duration-300">Login</button>
+            </div>
+            <div class="bg-white w-88 sm:w-96 md:w-[700px] md:m-auto lg:w-96 rounded-md p-6 shadow-md ">
+                <h2 class="text-4 font-bold text-center text-black">Student login</h2>
+                <p class="text-center text-3 text-gray-600 ">welcome back neefex, kindly login below</p>
+                <div class="pt-5 flex flex-col gap-5">
+                    <input type="email" autocomplete="off" placeholder="Email" class="p-3 bg-none outline-none border-gray-600 border-2 rounded-md">
+                    <input type="password" autocomplete="off" placeholder="password" class="p-3 bg-none outline-none border-gray-600 border-2 rounded-md">
+                </div>
+                <button class="bg-amber-600 p-4 mt-6 text-black font-semibold w-24 rounded-xl hover:bg-amber-700 text-3 hover:scale-105 hover:text-white transition-transform duration-300">Login</button>
+            </div>
+            <div class="bg-white w-88 sm:w-96 md:w-[700px] md:m-auto lg:w-96 rounded-md p-6 shadow-md">
+                <h2 class="text-4 font-bold text-center text-black">Student login</h2>
+                <p class="text-center text-3 text-gray-600 ">welcome back neefex, kindly login below</p>
+                <div class="pt-5 flex flex-col gap-5">
+                    <input type="email" autocomplete="off" placeholder="Email" class="p-3 bg-none outline-none border-gray-600 border-2 rounded-md">
+                    <input type="password" autocomplete="off" placeholder="password" class="p-3 bg-none outline-none border-gray-600 border-2 rounded-md">
+                </div>
+                <button class="bg-amber-600 p-4 mt-6 text-black font-semibold w-24 rounded-xl hover:bg-amber-700 text-3 hover:scale-105 hover:text-white transition-transform duration-300">Login</button>
+            </div>
+        </div>
+    </div>
+    <div class="bg-gradient-to-l from-amber-600 to-amber-700">
+        <!-- footer section -->
+        <div class="flex justify-between flex-col sm:flex-row md:flex-col lg:flex-row w-[88%] m-auto py-10 items-center">
+            <h2 class="text-black text-4 font-bold font-default cursor-pointer hover:text-white transition-colors duration-300">Hello world !</h2>
+            <div class="flex gap-4 pb-3 sm:pb-0 md:pb-3 lg:pb-0 font-semibold">
+                <p class="hover:text-white hover:text-opacity-75 cursor-pointer transition-opacity duration-300 underline">Use template</p>
+                <p class="hover:text-white hover:text-opacity-75 cursor-pointer transition-opacity duration-300 underline">contact owner</p>
+            </div>
+            <h2 class="text-black text-3 font-bold font-default">Copyright &copy; 2024, Learning Tailwindcss</h2>
+        </div>
+    </div>
+</body>
+</html>
